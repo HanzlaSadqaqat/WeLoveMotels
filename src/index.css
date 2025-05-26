@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Geist Sans */
+@font-face {
+  font-family: "Geist Sans";
+  src: url("/fonts/Geist-Sans.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --alert: rgba(178, 34, 34, 1);
+  --app-secondary: rgba(51, 51, 51, 1);
+  --drop-shadow-1: 0px 14px 32px 0px rgba(184, 184, 184, 0.1),
+    0px 58px 58px 0px rgba(184, 184, 184, 0.09),
+    0px 130px 78px 0px rgba(184, 184, 184, 0.05),
+    0px 230px 92px 0px rgba(184, 184, 184, 0.01),
+    0px 360px 101px 0px rgba(184, 184, 184, 0);
+  --dropp: 0px 11px 24px 0px rgba(64, 64, 64, 0.1),
+    0px 43px 43px 0px rgba(64, 64, 64, 0.09),
+    0px 98px 59px 0px rgba(64, 64, 64, 0.05),
+    0px 173px 69px 0px rgba(64, 64, 64, 0.01),
+    0px 271px 76px 0px rgba(64, 64, 64, 0);
+  --drp11: 0px 11px 24px 0px rgba(64, 64, 64, 0.1),
+    0px 43px 43px 0px rgba(64, 64, 64, 0.09),
+    0px 98px 59px 0px rgba(64, 64, 64, 0.05),
+    0px 173px 69px 0px rgba(64, 64, 64, 0.01),
+    0px 271px 76px 0px rgba(64, 64, 64, 0);
+  --secondary-2: rgba(255, 215, 0, 1);
+  --white: rgba(255, 255, 255, 1);
+  --x-1: rgba(0, 21, 36, 1);
+  --x-3: rgba(255, 255, 255, 1);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: transparent;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: transparent;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+/* Geist Mono */
+@font-face {
+  font-family: "Geist Mono";
+  src: url("/fonts/Geist-Mono.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --font-geist-sans: "Geist Sans", sans-serif;
+  --font-geist-mono: "Geist Mono", monospace;
+}
+
+body {
+  font-family: var(--font-geist-sans);
+}
+
+.font-mono {
+  font-family: var(--font-geist-mono);
+}
